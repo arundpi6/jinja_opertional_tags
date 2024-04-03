@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested_if</title>
+</head>
+<body>
+    <center>
+        <h1><button><h1>NESTED_IF</h1></button></h1>
+        <h1>a = {{a}}</h1>
+        <h1>b = {{b}}</h1>
+        <h1>c = {{c}}</h1>
+            {% if a > b  %}
+                {% if a > c %}
+                    <h1>a is greater than b & c</h1>
+                {% else %}
+                    <h1>c is greater</h1>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    <h1>b greater than a & c</h1>
+                {% else %}
+                    <h1>c is greater</h1>
+                {% endif %}
+            {% endif %}
+    </center>
+</body>
+</html>
